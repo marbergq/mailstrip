@@ -123,6 +123,12 @@ I am currently using the Java HTTP API.
 		"email_2_3",
 		[]checker{&emailStringChecker{equalsString("Hey, does this work now?")}},
 	},
+
+	{
+		"test_parse_out_just_top_for_outlook_reply_swe",
+		"email_2_4",
+		[]checker{&emailStringChecker{equalsString("Hej testar svar från mail\n\n\n\n\n\n\n\n\n\n    First LastName\n\n    Role\n\n    +46 70 00 00 00\n\n\n\n     • • • • • • • • • • • • • • •\n\n\n\n      Company AB  •  Adress nr  •  zip code city  •  www.webpage.se")}},
+	},
 	{
 		"test_parse_out_sent_from_iPhone",
 		"email_iPhone",
